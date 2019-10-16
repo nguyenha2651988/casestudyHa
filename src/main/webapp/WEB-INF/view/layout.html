@@ -3,30 +3,105 @@
 <head th:fragment="head">
     <meta charset="UTF-8">
     <title>MapleStory2</title>
-    <link rel="stylesheet" href="css/webMapleStory.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="javaScript/statTime.js"></script>
+    <style>
+        #body {
+            width: 100%;
+            height: 1000px;
+        }
+
+        #header {
+            width: 100%;
+            height: 10%;
+        }
+
+        .head-left {
+            float: left;
+            width: 15%;
+        }
+
+        .head-mid {
+            padding-left: 10px;
+            float: left;
+            width: 84%;
+        }
+
+        #imgLogo {
+            width: 100%;
+            height: 200px;
+        }
+
+        #imgTitle {
+            width: 100%;
+            height: 200px;
+        }
+
+        #navbar {
+            display: inline-block;
+            background: black;
+            width: 99%;
+        }
+
+        h2 {
+            float: left;
+            margin-left: 20px;
+        }
+        #sizeBar{
+            width: 15%;
+            height: 100%;
+            float: left;
+            display: inline-block;
+            background: aquamarine;
+        }
+        .sizeBarTop{
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        .sizeBarRight{
+            margin-top: 50px;
+            background: #3afffd;
+            width: 90%;
+        }
+        th{
+            margin-top: 20px;
+            font-size: 30px;
+        }
+        input{
+            margin-top: 20px;
+            width: 250px;
+            height: 50px;
+
+        }
+        #content{
+            height: 600px;
+            background: #bbdeff;
+        }
+
+    </style>
 </head>
 <body>
-<div id="body" onload="startTime()">
-    <div id="header">
+<div id="body" >
+
+
+    <div id="header" th:fragment="header">
         <div class="head-left"><img id="imgLogo"
                                     src="https://upload.wikimedia.org/wikipedia/en/0/0a/Maplestory_2_Logo.png" alt="">
         </div>
         <div class="head-mid"><img id="imgTitle" src="http://nxcache.nexon.net/cms/2019/1818/msfannounce_960x290.jpg"
                                    alt=""></div>
     </div>
-    <div id="navbar">
+    <div id="navbar" th:fragment="navbar">
         <h2><a href=""><span class="glyphicon glyphicon-home"></span> home </a>|</h2>
-        <h2><a href=""><span class="glyphicon glyphicon-list-alt"></span>Tin Tức </a>|</h2>
+        <h2><a href=""><span class="glyphicon glyphicon-list-alt"></span> Tin Tức </a>|</h2>
         <h2><a href=""><span class="glyphicon glyphicon-shopping-cart"></span> Mua Item </a>|</h2>
         <h2><a href=""><span class="glyphicon glyphicon-queen"></span> Xếp Hạng </a>|</h2>
-        <h2><a href=""><span class="glyphicon glyphicon-credit-card"></span>Nạp Thẻ </a>|</h2>
+        <h2><a href=""><span class="glyphicon glyphicon-credit-card"></span> Nạp Thẻ </a>|</h2>
         <h2><a href=""><span class="glyphicon glyphicon-phone-alt"></span> Liên Hệ/Hỗ trợ</a></h2>
     </div>
-    <div id="sizeBar">
+
+    <div id="sizeBar" th:fragment="sizeBar">
         <div class="sizeBarTop">
             <div>
                 <form>
@@ -64,8 +139,5 @@
         </div>
     </div>
 </div>
-<!--<footer th:fragment="footer">-->
-<!--    &copy; 2018 CodeGym-->
-<!--</footer>-->
 </body>
 </html>

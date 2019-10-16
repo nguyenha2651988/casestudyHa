@@ -13,7 +13,7 @@
         <introspection-scope>
           <node kind="schema">
             <name qname="@" />
-            <name qname="webMapleStory" />
+            <name qname="web_maple_story" />
           </node>
         </introspection-scope>
       </schema-mapping>
