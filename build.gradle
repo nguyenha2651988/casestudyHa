@@ -1,0 +1,32 @@
+plugins {
+    id 'java'
+    id 'war'
+}
+
+group 'com.codegym'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // web
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.1.8.RELEASE'
+    // thymeleaf
+//        compile group: 'org.springframework.boot', name: 'spring-boot-starter-thymeleaf', version: '2.0.4.RELEASE'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-thymeleaf', version: '2.1.9.RELEASE'
+
+    // security
+//    compile group: 'org.springframework.security', name: 'spring-security-jwt', version: '1.0.10.RELEASE'
+//    compile group: 'org.springframework.boot', name: 'spring-boot-starter-security', version: '2.1.8.RELEASE'
+//
+    compile group: 'org.springframework.boot', name: 'spring-boot-devtools', version: '2.1.8.RELEASE'
+    compile group: 'org.springframework', name: 'spring-webmvc', version: '4.3.17.RELEASE'
+//
+//    compile group: 'mysql', name: 'mysql-connector-java', version: '8.0.17'
+//    compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa', version: '2.1.8.RELEASE'
+
+}
