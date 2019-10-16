@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="head">
+    <meta charset="UTF-8">
+    <title>MapleStory2</title>
+    <link rel="stylesheet" href="css/webMapleStory.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="javaScript/statTime.js"></script>
+</head>
+<body>
+<div id="body" onload="startTime()">
+    <div id="header">
+        <div class="head-left"><img id="imgLogo"
+                                    src="https://upload.wikimedia.org/wikipedia/en/0/0a/Maplestory_2_Logo.png" alt="">
+        </div>
+        <div class="head-mid"><img id="imgTitle" src="http://nxcache.nexon.net/cms/2019/1818/msfannounce_960x290.jpg"
+                                   alt=""></div>
+    </div>
+    <div id="navbar">
+        <h2><a href=""><span class="glyphicon glyphicon-home"></span> home </a>|</h2>
+        <h2><a href=""><span class="glyphicon glyphicon-list-alt"></span>Tin Tức </a>|</h2>
+        <h2><a href=""><span class="glyphicon glyphicon-shopping-cart"></span> Mua Item </a>|</h2>
+        <h2><a href=""><span class="glyphicon glyphicon-queen"></span> Xếp Hạng </a>|</h2>
+        <h2><a href=""><span class="glyphicon glyphicon-credit-card"></span>Nạp Thẻ </a>|</h2>
+        <h2><a href=""><span class="glyphicon glyphicon-phone-alt"></span> Liên Hệ/Hỗ trợ</a></h2>
+    </div>
+    <div id="sizeBar">
+        <div class="sizeBarTop">
+            <div>
+                <form>
+                    <table>
+                        <tr>
+                            <th>Tài Khoản</th>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="name" placeholder="Tên Đăng Nhập"></td>
+                        </tr>
+                        <tr>
+                            <th>Mật Khẩu</th>
+                        </tr>
+                        <tr>
+                            <td><input type="password" name="pass" placeholder="Nhập Mật Khẩu"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="submit" value="Đăng nhập" class="btn btn-primary"></td>
+                        </tr>
+                        <tr>
+                            <td><a href="" style="font-size: 20px">Đăng Ký</a></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div class="sizeBarRight">
+                <h3>Thông Tin Máy Chủ</h3>
+                <h5>Phiên bản: 62</h5>
+                <h5>Tỷ Lệ Kinh Nghiệm: 2x</h5>
+                <h5>Tỷ Lệ Meso: 1x</h5>
+                <h5>Tỷ Lệ Rơi Đồ: 1x</h5>
+                <h5>Tỷ Lệ Nhiệm vụ: 3x</h5>
+                <h5>Kênh hoạt động: 6</h5>
+            </div>
+        </div>
+    </div>
+</div>
+<!--<footer th:fragment="footer">-->
+<!--    &copy; 2018 CodeGym-->
+<!--</footer>-->
+</body>
+</html>
